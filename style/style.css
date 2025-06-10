@@ -1,0 +1,616 @@
+/* global rules */
+* {
+    box-sizing: border-box;
+    margin: 0;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family:Rubik;
+    background-color: #F6F6F6;
+    font:2rem;
+}
+
+ul { 
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+}
+
+.container {
+    width: 90%;
+    margin: auto;
+    padding: 20px;
+}
+.center{
+    text-align: center;
+}
+
+.row {
+    display: flex;   
+    justify-content: space-between;
+    align-content: center;
+    gap: 1rem;
+}
+
+.bold{
+    font-weight: bold;
+}
+.maincolor{
+    color: #0B132A;
+}
+
+.secondaryColor{
+    color: #4F5665;
+}
+p , h2, h3{
+    word-spacing: 0.5rem;
+    line-height: 2rem;
+}
+
+/* start header section */
+header{
+    position: fixed;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+    padding: 1rem 0;
+    width: 100%;
+    z-index: 1;
+    background-color: #F6F6F6;
+}
+header .logo{
+    flex-basis: 15%;
+    height: 40%;
+}
+header .logo img {
+    width: 100%;
+    
+}
+header .row{
+    display: flex;
+    justify-content: start;
+    position: relative;
+}
+
+header ul a{    
+    transition: 0.3s ease-out;
+    margin: 1rem;
+    display: flex;
+    justify-content: center;
+}
+header ul a:hover{
+    border-bottom: 2px solid #F53855 ;
+}
+header .sign a {
+    color: #0B132A;
+    font-weight: bold;
+}
+header .sign{
+
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    position: absolute;
+    right: 1rem;
+    width: auto;
+
+}
+
+header button{
+    padding: 10px 30px;
+    border: 1px solid #F53855;
+    background-color: white;
+    color: #F53855;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+    
+}
+
+button:hover {
+    color: white;
+    background-color: #F53855;
+    transition: box-shadow 0.3s ease;
+}
+@media (max-width:1024px) {
+    header ul a{    
+    display: none;
+}
+    header .logo{
+    flex-basis: 30%;
+    height: 50%;
+}
+}
+
+
+
+
+/* end of header section */
+
+/* start about secion */
+.home{
+    height: 100%;
+    padding: 90px;
+}
+.home .row{
+    align-items: center;
+    height: 100%;
+    justify-content: center;
+}
+.home .container{
+    height: 100%;
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+}
+.home article{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    gap: 1rem;
+    
+}
+
+
+
+.home article p{
+    font-size:1.5rem; 
+}
+
+.homeimg{
+    flex-basis: 100%;
+}
+
+.homeimg img{
+    width: 100%
+}
+
+.home article button{
+    width: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #F53838;
+    padding: 16px 48px;
+    color: white;
+    font-weight: bold;
+    font-size: large;
+    border: none;
+}
+
+.home article button:hover{
+    box-shadow: 0px 8px 15px red;
+}
+
+@media (max-width:1024px) {
+    .home .container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+    
+}
+
+/* end of about section */
+
+/* start sub-about  section */
+
+.contaner2 {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+    transition: transform 0.3s ease;
+    max-width: 50%;
+    padding: 30px;
+}
+
+.contaner2:hover {
+    transform: scale(1.05);
+}
+
+
+
+.contaner2 img {
+    border-radius: 50%;
+    padding: 8px;
+    width: 60px;
+    height: 60px;
+    object-fit: contain;
+}
+
+.number {
+    font-size: 18px;
+    color: #0B132A;
+    margin: 0;
+    font-weight: bold;
+}
+
+.label {
+    color: #4F5665;
+    margin: 0;
+    font-size: 14px;
+}
+.section2 .container .row{
+    background-color: white;
+    border-radius: 12px;
+    text-align: center;
+    padding: 2rem;
+    margin: 3rem;
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+
+}
+
+
+@media (max-width: 1024px) {
+.section2 .container .row{
+    flex-direction: column;
+    align-content: center;
+    justify-content: center;
+    }
+    .contaner2{
+        align-content: center;
+        justify-content: center;
+        text-align: center;
+    }
+}
+
+/* end of sub-about section */
+
+/* start Features section*/
+.Features .container .row{
+    display: grid;
+    grid-template-columns: repeat(2, 50%);
+}
+
+.Features .row  div{
+    margin-top: 20px;
+    gap: 20px;
+}
+
+.Features div{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+
+.Features ul{
+    display: flex;
+    flex-direction: column;
+    align-content: center;
+    justify-content: space-between;
+    padding: 2rem;
+}
+
+.Features ul li{
+    display: flex;
+    padding: 0;
+    gap: 2rem;
+    
+}
+@media (max-width:1024px) {
+.Features .container .row{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}    
+}
+    /* <!-- end of Features --> */
+
+    /* <!-- start ur plan section --> */
+.plan {
+    text-align: center;
+    padding: 3rem;
+} 
+.plan h3{
+    font-size: 35px;
+    margin: 3rem;
+}   
+.plan p{
+    font-size: 16px;
+}
+    /* <!-- end ur plan section --> */
+    /* <!-- start of plan boxes --!>*/
+.plan-box {
+    display: flex;
+    flex-direction: row;
+    gap: 2rem;
+    padding:30px 10px;
+    flex-wrap: wrap;
+    justify-content: center;
+    
+
+}
+
+
+
+.check-list {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+    line-height: 2;
+}
+
+.check-list li::before {
+    content: "✔ ";
+    color: green;
+    margin-right: 8px;
+    font-weight: bold;
+}
+.price span {
+    font-weight: bold;
+    font-size: large;
+}
+
+.selectbottom {
+    padding: 20px 50px;
+    border: 1px solid #F53855;
+    background-color: white;
+    color: #F53855;
+    border-radius: 999px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.selectbottom:hover {
+    background-color: #F53855;
+    color: white;
+}
+
+.plan-contaner {
+    border: 1px solid #8e9092da;
+    border-radius: 10px;
+    width: 300px;
+    min-width: 200px;
+    padding: 20px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-content: center;
+    transition: transform 0.3s ease;
+    margin: 1.5rem;
+    
+
+}
+
+
+.plan-contaner:hover {
+    transform: scale(1.05) translateY(-5px);
+    box-shadow: 0 0 10px #e01c1c;
+}
+
+@media (max-width:676px) {
+    .plan-box{    
+    display: grid;
+    grid-template-columns: repeat(auto-fit);
+    }
+}
+/* <!-- end of plan boxes --> */
+
+/* <!-- start Network section --> */
+.Network div{
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+}
+.Network img{
+    width: 80%;
+}
+/* <!-- end Network section --> */
+
+/* <!-- start social media icon --> */
+
+.social .center{
+    padding: 2rem;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    gap: 1rem;
+    flex-wrap: wrap;
+}
+
+
+/* <!-- end social media icon --> */
+
+/* <!-- start Happy Customer icon --> */
+.happy-customer{
+    padding: 3rem;
+}
+.happy-customer .center p{
+    color: #4F5665;
+}
+
+/* <!-- end Happy Customer icon --> */
+/* <!-- start stories of our customers --> */
+.stories{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: center;
+    padding: 40px 20px;
+    font-family: Arial, sans-serif;
+}
+.customer{
+    border-radius: 15px;
+    border: 2px solid transparent;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.05);
+    transition: 0.3s;
+}
+.customer:hover {
+    border-color: red;
+}
+.customer-info{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 15px;
+}
+.customer-info > div:last-child p {
+    margin: 0;
+    font-size: 14px;
+    color: #4F5665;
+    line-height: 1.2;
+}
+.customer-info > div:last-child img {
+    width: 30px;
+    height: 30px;
+    border-radius: 50%;
+}
+.customer > p {
+    font-size: 15px;
+    color: #0B132A;
+    line-height: 1.5;
+    margin-top: 10px;
+}
+.customer-name{
+    display: flex;
+    flex-direction: row;
+    gap: 15px;
+}
+.rating {
+    display: flex;
+    align-items: center;
+    gap: 5px;
+    font-weight: bold;
+    color: #4F5665;
+}
+
+.cuntry{
+    font-size: small;
+    color: #4F5665;
+}
+.his-name{
+    line-height: 0;
+}
+.customer-name img {
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+}
+/* <!-- end stories of our customers --> */
+
+/* <!-- start of Subscribe section --> */
+
+.subscribe{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  align-content: center;
+  /* z-index: 5; */
+  padding: 20px 4rem;
+  /* margin:20px 40px  ; */
+
+}
+.subscribe2 {
+    display: flex;
+    flex-direction: column;
+    /* margin-bottom: 20px; */
+    line-height: 1.4;
+}
+.subscribe button{
+    width: fit-content;
+    border-radius: 10px;
+    cursor: pointer;
+    background-color: #F53838;
+    padding: 10px 48px;
+    color: rgb(255, 255, 255);
+    font-weight: bold;
+    font-size: large;
+    border: none;
+    height: 60px;
+}
+.subscribe button:hover{
+    box-shadow: 0px 8px 15px #F53838;
+}
+
+@media (max-width:676px) {
+    
+.subscribe{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+
+}
+    
+}
+/* <!-- end of Subscribe section --> */
+/* <!-- start of footer --> */
+
+footer{
+    background-color:#f2f2f3;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 80px;
+
+}
+.footerc1{
+    width: 30%;
+}
+.footerc1 .logoimge{
+  width: 30%;
+  
+}
+.footerc1 p{
+    line-height: 3; 
+  word-spacing: 2;
+}
+.footerc1 .icone{
+    display: flex;
+    width: 1rem;
+}
+.footercolumn ul{
+    list-style-type: none;
+    padding-left: 0;
+    color:#4F5665 ;
+}
+.footercolumn li{
+    transition: color 0.3s ease;
+    line-height: 3; 
+  word-spacing: 2;
+}
+.footercolumn li:hover{
+    cursor: pointer;
+    color: #F53838;
+}
+.footercolumn p{
+    font-weight: bold;
+}
+@media (max-width:1024px){
+    footer{
+    background-color:#f2f2f3;
+    display: grid;
+    grid-template-columns: repeat(2,0.5fr);
+    justify-content: space-between;
+    padding: 80px;
+
+}
+.footerc1 .logoimge{
+  width: 100%;
+  
+}
+}
+
+
+
+
+/* <!-- end of footer --> */
